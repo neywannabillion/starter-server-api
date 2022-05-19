@@ -1,9 +1,8 @@
 const express = require("express");
-const config =  require('./config/config_env');
 const apiRouter = require("./app");
 
 const app = express()
-const port = config.PORT || 8080
+const port = process.env.NODE_ENV == 'prod' ? 5000 : 4000
 
 
 app.use(express.json());

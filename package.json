@@ -4,8 +4,8 @@
   "description": "Starter kit for server API",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=production&& pm2 start src/server.js --watch",
-    "dev": "set NODE_ENV=development&& pm2 start src/server.js --watch"
+    "start": "set NODE_ENV=prod&& pm2 start src/server.js --watch",
+    "dev": "set NODE_ENV=dev&& node src/server.js --watch"
   },
   "keywords": [],
   "author": "ney",
